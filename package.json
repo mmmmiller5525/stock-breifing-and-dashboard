@@ -2,6 +2,7 @@
   "name": "stock-briefing-web",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
   "description": "MILLER 美股简报 · Vercel 静态托管 + API + GitHub 后端",
   "scripts": {
     "dev": "vercel dev",
