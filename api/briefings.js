@@ -22,8 +22,11 @@ function ghHeaders(extra = {}) {
 }
 
 async function ghListFiles() {
-  const url = `https://api.github.com/repos/${REPO}/contents/briefings?ref=${BRANCH}`;
-  const r = await fetch(url, { headers: ghHeaders() });
+  const url = `https://api.github.com/repos/${REPO}/contents/briefings?ref=${BRANCH}&t=${Date.now()}`;
+  const r = await fetch(url, {
+    headers: ghHeaders({ 'Cache-Control': 'no-cache' }),
+    cache: 'no-store',
+  });
   if (!r.ok) {
     const text = await r.text();
     throw new Error(`GitHub list failed: ${r.status} ${text}`);
@@ -37,11 +40,14 @@ async function ghListFiles() {
       const parts = stem.split('-');
       const date = parts.slice(0, 3).join('-');
       const type = parts.slice(3).join('-');
+      // 单篇加载走 /api/file?p=<filename>&sha=<sha>，
+      // 服务端用 sha 作为 cache-buster 走 GitHub API 拿真实 bytes，
+      // 避免 raw.githubusercontent.com 的 CDN 缓存返回旧内容
       return {
         name: f.name,
         date,
         type,
-        url: `https://raw.githubusercontent.com/${REPO}/${BRANCH}/briefings/${f.name}`,
+        url: `/api/file?p=${encodeURIComponent(f.name)}&sha=${f.sha}`,
         api_url: f.url,
         sha: f.sha,
         size: f.size,
