@@ -163,9 +163,10 @@ async function load() {
       document.getElementById('content').innerHTML = '<p>文件不存在</p>';
       return;
     }
-    const md = await fetch(file.url, { cache: 'no-store' }).then(r => {
+    const md = await fetch(file.url, { cache: 'no-store' }).then(async r => {
       if (!r.ok) throw new Error('HTTP ' + r.status);
-      return r.text();
+      const buf = await r.arrayBuffer();
+      return new TextDecoder('utf-8').decode(buf);
     });
     document.getElementById('content').innerHTML = renderMarkdown(md);
   } catch (e) {
