@@ -11,9 +11,7 @@ export default async function handler(req, res) {
   if (!title || !desp) return res.status(400).json({ ok: false, error: 'missing title/desp' });
 
   const sct = process.env.SCT_KEY;
-  if (!sct) {
-    return res.status(500).json({ ok: false, error: 'SCT_KEY not configured' });
-  }
+  if (!sct) return res.status(500).json({ ok: false, error: 'SCT_KEY not configured' });
 
   try {
     const body = new URLSearchParams({ title, desp });
@@ -25,6 +23,6 @@ export default async function handler(req, res) {
     const j = await r.json();
     return res.status(200).json({ ok: true, serverChan: j });
   } catch (e) {
-    return res.status(500).json({ ok: false, error: String(e) });
+    return res.status(500).json({ ok: false, error: String(e.message || e) });
   }
 }
