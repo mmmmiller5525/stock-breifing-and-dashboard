@@ -1,0 +1,6 @@
+{
+  "functions": {
+    "api/briefings.js": { "maxDuration": 10 },
+    "api/notify.js": { "maxDuration": 10 }
+  }
+}

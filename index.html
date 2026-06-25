@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>美股简报 · MILLER</title>
+<style>
+  :root {
+    --bg: #0f1419; --bg-elev: #1a1f29; --border: #2a3038;
+    --text: #e4e6eb; --text-dim: #8a8f99; --accent: #4a9eff;
+    --gain: #ef5350; --loss: #26a69a; --neutral: #ffa726;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: var(--bg); color: var(--text); line-height: 1.6; min-height: 100vh;
+  }
+  .container { max-width: 920px; margin: 0 auto; padding: 24px 20px; }
+  header { border-bottom: 1px solid var(--border); padding-bottom: 16px; margin-bottom: 24px; }
+  h1 { font-size: 22px; font-weight: 600; letter-spacing: 0.5px; }
+  .subtitle { color: var(--text-dim); font-size: 13px; margin-top: 4px; }
+  .meta { color: var(--text-dim); font-size: 12px; margin-top: 8px; }
+  .filter { margin: 16px 0 24px; display: flex; gap: 8px; flex-wrap: wrap; }
+  .filter button {
+    background: var(--bg-elev); border: 1px solid var(--border); color: var(--text-dim);
+    padding: 6px 14px; border-radius: 4px; font-size: 13px; cursor: pointer; transition: all 0.15s;
+  }
+  .filter button:hover { color: var(--text); border-color: var(--accent); }
+  .filter button.active { background: var(--accent); color: white; border-color: var(--accent); }
+  .briefing-list { display: flex; flex-direction: column; gap: 12px; }
+  .card {
+    background: var(--bg-elev); border: 1px solid var(--border); border-radius: 8px;
+    padding: 18px 20px; transition: border-color 0.15s, transform 0.15s; cursor: pointer;
+    text-decoration: none; color: inherit; display: block;
+  }
+  .card:hover { border-color: var(--accent); transform: translateX(2px); }
+  .card-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 8px; }
+  .card-title { font-size: 16px; font-weight: 600; }
+  .card-type {
+    font-size: 11px; padding: 2px 8px; border-radius: 3px; background: var(--border);
+    color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.5px;
+  }
+  .card-type.premarket { background: #1e3a5f; color: #6ba3ff; }
+  .card-type.close { background: #3d2a1e; color: #ffb74d; }
+  .card-summary { color: var(--text-dim); font-size: 13px; line-height: 1.5; }
+  .card-date { color: var(--text-dim); font-size: 11px; margin-top: 6px; }
+  .empty { text-align: center; padding: 60px 20px; color: var(--text-dim); }
+  footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--border); color: var(--text-dim); font-size: 12px; text-align: center; }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>美股简报</h1>
+    <div class="subtitle">MILLER · 每日 21:00 盘前 + 次日 07:30 收盘</div>
+    <div class="meta" id="meta">载入中...</div>
+  </header>
+
+  <div class="filter">
+    <button data-filter="all" class="active">全部</button>
+    <button data-filter="premarket">盘前</button>
+    <button data-filter="close">收盘</button>
+  </div>
+
+  <div class="briefing-list" id="list">
+    <div class="empty">载入中...</div>
+  </div>
+
+  <footer>
+    数据 15-20 分钟延迟，仅供参考，不构成投资建议<br>
+    文件来源：Vercel Blob · mavis cron 定时推送
+  </footer>
+</div>
+
+<script>
+let FILES = [];
+
+function escape(s) {
+  return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+}
+
+function render(filter) {
+  const items = FILES
+    .filter(f => filter === 'all' || f.type === filter)
+    .sort((a, b) => b.date.localeCompare(a.date));
+
+  if (items.length === 0) {
+    list.innerHTML = '<div class="empty">还没有简报。等待今晚 21:00 盘前快报。</div>';
+    return;
+  }
+
+  list.innerHTML = items.map(f => `
+    <a class="card" href="briefing.html?f=${encodeURIComponent(f.name)}">
+      <div class="card-header">
+        <div class="card-title">${escape(f.title)}</div>
+        <div class="card-type ${f.type}">${f.type === 'premarket' ? '盘前' : '收盘'}</div>
+      </div>
+      <div class="card-summary">点击查看完整简报</div>
+      <div class="card-date">${f.date}</div>
+    </a>
+  `).join('');
+}
+
+async function loadFiles() {
+  try {
+    const res = await fetch('/api/briefings');
+    const data = await res.json();
+    if (data.ok) {
+      FILES = data.files;
+      meta.textContent = `共 ${FILES.length} 份简报 · 自动同步 Vercel Blob`;
+    } else {
+      meta.textContent = '载入失败：' + (data.error || 'unknown');
+    }
+  } catch (e) {
+    meta.textContent = '网络错误：' + e.message;
+  }
+  render('all');
+}
+
+document.querySelectorAll('.filter button').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.filter button').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    render(btn.dataset.filter);
+  });
+});
+
+loadFiles();
+</script>
+</body>
+</html>

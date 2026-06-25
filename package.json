@@ -1,0 +1,13 @@
+{
+  "name": "stock-briefing-web",
+  "version": "1.0.0",
+  "private": true,
+  "description": "MILLER 美股简报 · Vercel 静态托管 + API",
+  "scripts": {
+    "dev": "vercel dev",
+    "deploy": "vercel --prod"
+  },
+  "dependencies": {
+    "@vercel/blob": "^0.27.0"
+  }
+}
