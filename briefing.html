@@ -51,8 +51,24 @@
 </div>
 
 <script>
+// 安全白名单: 只放行已知安全的内联标签 span / br / mark
+// 其他 <...> 仍然 escape 防止 XSS
+const ALLOWED_TAGS = ['span', 'br', 'mark'];
+
 function escapeHtml(s) {
-  return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  // 暂存安全标签, escape 完再放回
+  const stash = [];
+  let safe = String(s);
+  for (const tag of ALLOWED_TAGS) {
+    const re = new RegExp(`</?${tag}(?:\\s[^>]*)?>`, 'gi');
+    safe = safe.replace(re, (m) => {
+      stash.push(m);
+      return `\u0000${stash.length - 1}\u0000`;
+    });
+  }
+  safe = safe.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  safe = safe.replace(/\u0000(\d+)\u0000/g, (_, i) => stash[Number(i)]);
+  return safe;
 }
 
 function inline(s) {
