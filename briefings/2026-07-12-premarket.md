@@ -1,1 +1,62 @@
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+# 美股盘前快报 · 2026-07-12（周日，20:00 BJT 续发）
+
+**今日焦点**：伊朗革命卫队 7/12 凌晨宣布关闭霍尔木兹海峡，美军同日发起本周第三轮打击（覆盖 140 处目标），WTI 暗盘 7/12 10:30 BJT 涨超 3%；周末油价压力骤增，7/13 周一开盘前地缘溢价料将主导盘前情绪；存储主线（SKHY 转码 + HBM 涨价 + 7/16 长鑫 295 亿元申购）仍是核心防御板块。
+
+## 头部焦点
+
+- **霍尔木兹海峡正式关闭**：伊朗革命卫队海军 7/12 凌晨发表声明，宣布海峡即日起关闭，任何船只不得通行，直至另行通知且美国停止干涉该地区；触发原因为数艘船只试图沿未经伊方批准的航线航行、关闭自动识别系统被警告性射击。声明警告若美方以此为借口发动新袭击，伊方将打击中东地区更多美军基地。
+- **美军第三轮打击升级**：美军中央司令部在美东时间 7/11 19:15（北京时间 7/12 07:15）开始本周内第三轮打击伊朗；据阿克西奥斯新闻援引美国高级官员，本轮覆盖约 140 处目标，包括导弹/无人机储存与发射设施、海空监视雷达、防空阵地、萨姆发射装置等。伊朗南部格什姆岛、阿巴斯港、锡里克、布什尔、阿萨卢耶多地传出爆炸声。
+- **伊朗反击波及海湾盟友**：7/12 稍晚，伊朗宣布向巴林、卡塔尔、阿联酋方向发射导弹和无人机，称部分行动针对美国及其盟友在中东地区的军事目标；巴林、卡塔尔、阿联酋启动防空拦截和警报，海湾航运风险溢价骤升。
+- **阿曼"中间航道"提议搁浅**：CNN 报道阿曼已通知美国伊朗拒绝接受相关条款；伊朗重申美方必须解决霍尔木兹海峡通航问题 + 恢复伊朗石油出口正常化方能谈判，伊朗外交部证实未提出过任何与美谈判的诉求。
+- **油价暗盘短线拉涨**：WTI / 布伦特 7/12 10:30 BJT 暗盘双双涨超 3%；7/10 收盘 WTI $71.41 / 布油 $76.01，本轮冲突最激烈时布油曾达 $126。
+- **IEA 6 月供应 +410 万桶/日 但仍比战前低 940 万桶/日**：IEA 7 月《Oil Market Report》警示若美伊冲突再度升级，2027 年原本预计的全球原油供应宽松格局可能遭到破坏；OPEC+ 8 月连续第五个月增产 18.8 万桶/日，但增产无法解决运输瓶颈。
+- **沙特/阿联酋替代管线运力有限**：沙特东西输油管线 + 阿联酋富查伊拉港管线可绕开霍尔木兹，但伊拉克/科威特/卡塔尔仍高度依赖海峡，无法完全抵消；7/13 OPEC 月报料将调整全球供需预期。
+- **美股盘前异常信号**：财联社 7/12 02:39 BJT 报道，美股盛德财富再度向下触发熔断，跌幅扩大至 -24.13%，反映盘前情绪极度敏感。
+- **美联储半年度货币政策报告鹰派**：7/11 美东凌晨发布，14 处提及"价格稳定"（去年同期仅 5 次），强调"委员会已做好采取有力措施的准备"；新任主席沃什下周一将赴国会听证。
+- **SK 集团崔泰源 7/11 表态**：若股价稳定且投资回报良好，SK 海力士未来愿意进一步在美发行股票；公司正考虑"内存即服务"（MaaS）模式，客户可租用存储资源无需购买芯片。
+- **油价上行 vs 美联储政策路径**：CME FedWatch 7/10 显示 9 月维持利率不变概率约 78%；7/14 6 月 CPI + 7/16 零售销售将成为重新评估美联储政策路径的重要依据；高油价 + AI 投资可能同步推升通胀。
+
+## 存储板块（周末无盘，参考 7/10 周五收盘 + 周末新增）
+| Ticker | 名称 | 7/10 涨跌 | 关键叙事 |
+| --- | --- | --- | --- |
+| SNDK | 闪迪 | +7.59% $1,858.27 | 7/10 周五领涨存储，高盛目标价从 $1,200 升至 $2,200；周末无更新 |
+| WDC | 西部数据 | +5.04% $578.05 | Cantor Fitzgerald 目标价从 $660 升至 $900，Melius 首次覆盖 $1,050 |
+| MU | 美光科技 | +4.52% $991.64 | 传统存储"四天王"中 7/10 表现最弱，D.A. Davidson 目标价 $1,000；周末无更新 |
+| STX | 希捷科技 | +3.50% | 存储超级周期延续 |
+| ARM | ARM 控股 | +9.20% $327.87 | AI 芯片设计 IP 龙头，7/10 大涨 |
+| AMD | 超微半导体 | +5.66% $546.72 | 7/10 强劲反弹 |
+| MRVL | 迈威尔科技 | +4.99% $243.27 | AI ASIC 受益 |
+| AVGO | 博通 | +3.20% | 7/10 稳健上行 |
+
+**板块背景**：HBM3E 涨价潮延续，三星、SK 海力士等供应商已上调 2027 年 HBM3E 价格约 20%（业内罕见，新一代产品面世前通常下调前代价格）；DigiTimes 报告 HBM4 2027 价格将从 2 USD/GB 翻倍至 4-5 USD/GB。Gartner 预测 2027 年全球存储市场达 7,480 亿美元。SK 海力士 7/10 美股首秀 +12.76% 收 $168.01，临时代码 SKHYV 于 7/13 转 SKHY 正式交易，SKHYV 收盘价对应韩国股票溢价超 15%。瑞银跟进判断 DRAM 供应不足至少持续到 2028Q2。
+
+## 纳指 100 涨跌幅
+- **盘前**：美国市场周末休市。盘前概念不适用；7/13 周一盘前关注三大风险：① 伊朗关闭海峡后油价跳涨幅度（暗盘已 +3% 印证）② 美股盛德财富熔断后情绪传导 ③ 7/14 6 月 CPI 数据前夕通胀预期重定价（CME FedWatch 9 月 hold 概率 78%）。
+- **昨日（7/10 周五）完整榜对照**：
+  - 涨幅 TOP：LITE +11.13% / HPE +9.92% / ARM +9.20% / ASX +8.62% / NOK +8.03% / SNDK +7.59% / ALAB +6.18% / LRCX +6.01% / AMD +5.66% / PANW +5.53%
+  - 跌幅 TOP：AZN -5.72% / COST -4.21% / PEP -3.26% / PM -3.23% / MCK -3.10% / EOG -2.95% / XOM -2.71% / COP -2.52% / NOC -2.49% / EW -2.47%
+
+## 关注 ticker 5%+ 异动归因
+- **今日（7/12 周日）**：无盘，N/A。
+- **周末新增事件归因**（影响 7/13 周一盘前情绪）：
+  - 油价 + 美股能源板块：霍尔木兹关闭 + 美军第三轮打击 140 处目标 + 伊朗反击海湾盟友 → WTI / 布油周一开盘料高开 5-10%（暗盘已 +3%），能源股（XOM、CVX、COP、OXY、SLB）反弹但需警惕卖事实风险。
+  - 黄金 + 避险资产：财联社早班车 7/12 报道 COMEX 黄金 $4,128.9/盎司（7/10 收 -0.29%），地缘溢价或推动金价周一冲击 $4,200；但汇丰已下调 2026 年展望，金价自美以对伊战争以来累计跌超 20%。
+  - 美股芯片：盛德财富熔断 + 中东不确定性 → 盘前情绪偏谨慎，存储主线（SKHY 转码 + HBM 涨价）或仍是避风港；AVGO / ARM / MRVL 等高 PE AI 算力股可能承压。
+  - 国防 / 雷达 / 防空板块：美军 140 处目标覆盖萨姆发射装置 + 雷达 → LMT / RTX / NOC / LDOS 等国防股周一或受关注。
+
+## WallStreetBets Trending（过去 24h）
+1. **SKHYV / SKHY** - SK 海力士 7/10 美股首秀 +12.76% 收 $168.01（265 亿美元创纪录 IPO，全美历史第二大外资 IPO），7/13 转 SKHY 正式交易，Cboe 7/14 期权挂牌；MEME 属性中等（韩国 ADR 折溢价套利 + AI 存储主线），基本面强（高盛目标价 180 万韩元 / 2026-2028 资本支出 44/53/55 万亿韩元 / ROIC 30.6%→51.5% / 2027 史上最严重缺货警告 + 瑞银 2028Q2 前 DRAM 持续供应不足），风险点为韩国股票折价收窄速度，相关标的传导 MU / SNDK / WDC / STX。
+2. **SNDK** - 7/10 +7.59% 收 $1,858.27，高盛目标价 $2,200；MEME 属性低（机构定价主导），基本面强（高盛、Melius、Cantor 多家上调目标价），风险点为存储周期见顶信号，相关标的传导 WDC / STX / MU。
+3. **盛德财富（美股 7/12 熔断 -24.13%）** - 7/12 02:39 BJT 财联社报道；MEME 属性高（盘前熔断引发散户关注），基本面弱（具体业务尚未明朗），风险点为流动性踩踏 + 二次熔断，相关标的传导中概股小盘股情绪。
+4. **能源股（周末新增）** - 霍尔木兹关闭 + 美军 140 处目标打击 + 伊朗反击海湾盟友 → WTI 暗盘 +3%，WSB 关注 CVX / XOM / SLB / OXY 周末 call 异动；OPEC+ 8 月连续第五月增产 18.8 万桶/日但无法解决运输瓶颈。
+
+**MEME 主题信号**：周末 WSB 热度清淡，存储主线（SKHY 转码 + HBM 涨价）仍为主流叙事；中东避险（黄金 / 能源 / 国防）料将主导 7/13 盘前；谨慎对待无主线小盘股（盛德财富式熔断风险）+ 高 PE AI 算力股（AVGO / ARM / MRVL 估值高位 + 地缘溢价压缩风险）。
+
+## 今日必看
+1. **7/13 周一开盘前重点监测霍尔木兹海峡动态 + WTI 油价跳涨幅度**：若伊方维持关闭 + 美方继续打击 + 伊朗反击海湾盟友扩散，WTI 油价料开盘跳涨 5-10%（暗盘已 +3% 印证），黄金冲击 $4,200，能源股（XOM / CVX / COP / OXY / SLB）+ 国防股（LMT / RTX / NOC / LDOS）反弹但需警惕卖事实；高 PE AI 算力股（AVGO / ARM / MRVL）可能承压；中概股（特别是中概 ADR 折价股）情绪或受全球避险拖累。
+2. **SK Hynix 7/13 SKHYV → SKHY 正式转码 + Cboe 7/14 期权挂牌**：高盛目标价 180 万韩元；存储板块（SKHY / MU / SNDK / WDC / STX）7/13 开盘料受 ADR 流动性注入 + 期权对冲 + 韩国股价联动多重利好提振；地缘风险下存储主线仍是最强防御板块。
+3. **长鑫存储 7/16 科创板申购 295 亿元（2026 年 A 股最大）+ 7/13 OPEC 月报**：长鑫 IPO 辅导团队由中信 + 中信建投 31 人组成，证监会官网 7/10 更新第一期辅导工作进展；7/13 OPEC 月报若上调供应预期可能缓解油价压力；A 股半导体存储周一开盘联动（江波龙 / 兆易创新 / 长川科技 / 北方华创 / 拓荆科技）。
+4. **7/14 周一 6 月 CPI + JPM Q2 财报季序幕 + 沃什国会听证**：JPM / WFC / BAC / C / GS 周二起密集发布 Q2 财报，7/14 同时公布 6 月 CPI 数据（市场预期核心 CPI 环比 +0.3%），沃什国会听证同日举行；CME FedWatch 7 月 66.3% hold / 9 月 78% hold；高油价 + AI 投资可能推升通胀预期，关注 7/14 6 月 CPI 是否打破通胀回落叙事。
+
+---
+**简报结束 · 数据 15-20 分钟延迟，仅供参考，不构成投资建议**
